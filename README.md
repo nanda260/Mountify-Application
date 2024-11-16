@@ -21,7 +21,7 @@ The Mountify app is here to provide a solution by providing complete, accurate a
 3. Samuel Viktorio Togatorop (23050974075)
 
 # More Info
-Link Application : unesa.me/MountifyApplication
+Link Application : https://unesa.me/MountifyApplication
 
 Link Address Education of Technology Information : https://pendidikan-ti.ft.unesa.ac.id/
 
