@@ -1,4 +1,4 @@
-![Poster Mountify (3240 x 1080 piksel)](https://github.com/user-attachments/assets/2db169b8-a96a-450d-b7fb-07620f6e4443)
+![Salinan dari Poster Mountify (3240 x 1080 piksel)](https://github.com/user-attachments/assets/207cfb0a-5527-4a2b-be11-5f8dc81b2b01)
 
 
 # Mountify Application
