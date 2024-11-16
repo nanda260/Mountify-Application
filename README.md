@@ -4,12 +4,18 @@ Mountify is a hiking guide application that provides complete information about 
 *Mountify adalah aplikasi panduan pendakian yang menyediakan informasi lengkap tentang gunung-gunung di Indonesia, termasuk deskripsi gunung, jalur pendakian, flora dan fauna, lokasi peta, peralatan mendaki, dan tips penting. Dilengkapi dengan fitur pencarian dan akses admin untuk memperbarui data, Mountify dirancang untuk membantu pendaki pemula hingga berpengalaman merencanakan perjalanan dengan mudah dan aman.*
 
 # Application Purpose
-1. A Complete Source of Hiking Information 
+1. A Complete Source of Hiking Information
+   
 Mountify is designed as an information center that makes it easy for hikers to access important mountain data, such as altitude, location, and hiking trail options.
+
 2. Easier Hike Planning
+
 With trail guides, equipment lists, and practical tips, Mountify helps hikers prepare better. Users can create a hiking plan that suits their physical condition and abilities.
-3. Increasing Awareness of Hiking Safety 
+
+3. Increasing Awareness of Hiking Safety
+
 Mountify focuses on hiking safety by providing relevant tips and guides, encouraging   hikers to be better prepared and aware of the importance of safety during the trip.
+
 
 *1. Sumber Informasi Pendakian Lengkap*
 
