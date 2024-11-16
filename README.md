@@ -12,10 +12,15 @@ With trail guides, equipment lists, and practical tips, Mountify helps hikers pr
 Mountify focuses on hiking safety by providing relevant tips and guides, encouraging   hikers to be better prepared and aware of the importance of safety during the trip.
 
 *1. Sumber Informasi Pendakian Lengkap*
-*Mountify dirancang sebagai pusat informasi yang memudahkan pendaki untuk mengakses data gunung penting, seperti ketinggian, lokasi, dan pilihan jalur pendakian.
+
+*Mountify dirancang sebagai pusat informasi yang memudahkan pendaki untuk mengakses data gunung penting, seperti ketinggian, lokasi, dan pilihan jalur pendakian.*
+
 *2. Perencanaan Pendakian yang Lebih Mudah*
+
 *Dengan panduan jalur, daftar peralatan, dan kiat praktis, Mountify membantu pendaki mempersiapkan diri dengan lebih baik. Pengguna dapat membuat rencana pendakian yang sesuai dengan kondisi fisik dan kemampuan mereka.*
+
 *3. Meningkatkan Kesadaran akan Keselamatan Pendakian*
+
 *Mountify berfokus pada keselamatan pendakian dengan memberikan kiat dan panduan yang relevan, mendorong pendaki untuk lebih siap dan menyadari pentingnya keselamatan selama perjalanan.*
 
 # Application Function
