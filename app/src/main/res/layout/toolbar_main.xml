@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@color/colorBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linearUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mountfiyhorizontal" />
+        <Button
+            android:id="@+id/adminButton"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_admin"/>
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_alignParentEnd="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="55dp"
+            android:paddingLeft="10dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableLeft="@drawable/baseline_search"/>
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

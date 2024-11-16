@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewScroll"
+    android:fillViewport="true">
+
+
+<LinearLayout
+    android:background="@color/colorBackground"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activities.EditorActivity">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="center">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_back"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10sp"
+            android:text="Tambah Gunung"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/oren"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:text="Silahkan isi form penambahan gunung dengan benar, jika sudah benar klik tombol simpan dibawah."-->
+<!--        android:textColor="@color/cardview_light_background"-->
+<!--        android:textSize="14sp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginBottom="20dp"-->
+<!--        android:layout_marginRight="20dp"/>-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/Place"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+    <EditText
+        android:id="@+id/namaField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/cardview_light_background"
+        android:fontFamily="@font/poppinsregular"
+        android:inputType="text"
+        android:hint="Nama Gunung"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/imageField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/cardview_light_background"
+            android:hint="Link Gambar"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RadioGroup
+        android:id="@+id/lokasiGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lokasi"
+            android:layout_marginLeft="4sp"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/Place"/>
+        <RadioButton
+            android:id="@+id/radio_jawa_timur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Jawa Timur"
+
+            android:textColor="@color/cardview_light_background" /> <!-- Ganti dengan warna teks yang diinginkan -->
+
+        <RadioButton
+            android:id="@+id/radio_jawa_tengah"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Jawa Tengah"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/cardview_light_background" /> <!-- Ganti dengan warna teks yang diinginkan -->
+
+        <RadioButton
+            android:id="@+id/radio_jawa_barat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="Jawa Barat"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/cardview_light_background" /> <!-- Ganti dengan warna teks yang diinginkan -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxBackgroundMode="none"
+            android:textColorHint="@android:color/white"
+            android:layout_marginLeft="29dp"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="20dp"
+            app:hintEnabled="false"
+            android:layout_marginTop="-5dp">
+
+            <EditText
+                android:id="@+id/lainnya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:hint="Provinsi Lainnya"
+                android:textColorHint="@android:color/white"
+                android:inputType="text"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="14sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </RadioGroup>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/lat"
+            android:layout_width="match_parent"
+            android:textColor="@color/cardview_light_background"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Latitude"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"
+            android:hint="Longitude"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/deskripsiField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp"
+            android:fontFamily="@font/poppinsregular"
+            android:inputType="textMultiLine"
+            android:hint="Deskripsi Gunung"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginBottom="5sp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/jalurField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/cardview_light_background"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:hint="Jalur Pendakian"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:boxBackgroundMode="none"
+        android:layout_marginBottom="14dp"
+        android:textColorHint="@color/Place"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <EditText
+            android:id="@+id/infoField"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="14sp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:hint="Info Gunung"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <Button-->
+<!--            android:id="@+id/backBtn"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:backgroundTint="@color/design_default_color_background"-->
+<!--            android:text="Kembali"-->
+<!--            android:textColor="@color/oren"-->
+<!--            android:textSize="17dp"-->
+<!--            android:textStyle="bold" />-->
+    <Button
+        android:id="@+id/simpanButton"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:backgroundTint="@color/oren"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/design_default_color_background"
+        android:text="Simpan"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

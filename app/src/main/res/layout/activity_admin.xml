@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/viewScroll"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AdminActivity">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_anchor="@+id/appbar"
+        app:layout_anchorGravity="center">
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="7dp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_back"
+            android:text=" " />
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="10sp"
+            android:text="Admin Center"
+            android:fontFamily="@font/poppinssemibold"
+            android:textColor="@color/oren"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100sp"
+        android:background="@drawable/backgroundadmin"
+        android:orientation="vertical"
+        android:padding="40sp"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_admin"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinssemibold"
+            android:textSize="11sp"
+            android:textColor="@color/Place"
+            android:textAlignment="center"
+            android:text="Halaman ini khusus admin \nsilahkan isi username dan password admin."/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10sp"
+            android:textColorHint="@color/Place"
+            android:layout_height="wrap_content">
+            <EditText
+                android:layout_width="match_parent"
+                android:hint="Username"
+                android:id="@+id/usernameField"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="14sp"
+                android:textColor="@color/cardview_light_background"
+                android:layout_height="wrap_content">
+            </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="5sp"
+            android:textColorHint="@color/Place"
+            app:boxStrokeColor="@color/oren"
+            android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="Password"
+            android:id="@+id/passwordField"
+            android:inputType="textPassword"
+            android:fontFamily="@font/poppinsregular"
+            android:textSize="14sp"
+            android:textColor="@color/cardview_light_background"
+            android:layout_height="wrap_content">
+        </EditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:layout_marginTop="20sp"
+            android:textColor="@android:color/white"
+            android:background="@color/oren"
+            android:text="LOGIN"
+            android:fontFamily="@font/poppinsbold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
