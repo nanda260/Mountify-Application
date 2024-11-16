@@ -1,3 +1,6 @@
+![Poster Mountify (3240 x 1080 piksel)](https://github.com/user-attachments/assets/2db169b8-a96a-450d-b7fb-07620f6e4443)
+
+
 # Mountify Application
 Mountify is a hiking guide application that provides complete information about mountains in Indonesia, including mountain descriptions, hiking trails, flora and fauna, map locations, hiking equipment, and important tips. Equipped with search features and admin access to update data, Mountify is designed to help beginner to experienced hikers plan their trips easily and safely.
 
