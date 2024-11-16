@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main"
+        android:id="@+id/toolbar"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:iss_auto_cycle="true"
+                    android:layout_marginTop="20dp"
+                    app:iss_period="2000"
+                    app:iss_delay="5000"
+                    app:iss_corner_radius="20"
+                    android:id="@+id/slider">
+
+                </com.denzcoskun.imageslider.ImageSlider>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Wilayah Pendakian"
+                    android:textColor="@color/oren"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_shape" />
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_gravity="start"-->
+                <!--                    android:layout_marginStart="10dp"-->
+                <!--                    android:layout_marginBottom="10dp"-->
+                <!--                    android:text="Pilih lokasi Gunung yang ingin anda cari sesuai dengan wilayahnya pada menu berikut."-->
+                <!--                    android:textColor="@android:color/white"-->
+                <!--                    android:textSize="15sp" />-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvLokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="80dp"/>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabPeralatan"
+            android:layout_width="wrap_content"
+            android:layout_height="59dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="20dp"
+            android:text="Peralatan"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:theme="@style/FabExtendedMaterialTheme"
+            app:icon="@drawable/ic_peralatan"
+            app:iconTint="@android:color/white" />
+
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>
