@@ -50,8 +50,19 @@ class AdminActivity : AppCompatActivity() {
                 showCustomToast("Field tidak boleh kosong")
             } else {
                 loginUser(username, password)
+            val username = usernameField.text.toString()
+            val password = passwordField.text.toString()
+
+            if (username == "admin" && password == "admin") {
+                // Jika username dan password benar, pindah ke EditorActivity
+                showCustomToast("Anda berhasil masuk ke Admin Page")
+                val intent = Intent(this, AdminListGunungActivity::class.java)
+                startActivity(intent)
+            } else {
+                showCustomToast("Username atau password anda salah.")
             }
         }
+            }
         backBtn.setOnClickListener {
             finish()
         }
