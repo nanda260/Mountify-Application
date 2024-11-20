@@ -120,10 +120,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/poppinsregular"
-            android:textSize="15sp"
+            android:textSize="14sp"
             android:textColor="@color/Place"
-            android:layout_marginTop="18sp"
-            android:text="Create Account"
+            android:layout_marginTop="14sp"
+            android:text="Belum punya akun? Buat akun"
             android:clickable="true"
             android:focusable="true"
             android:textStyle="bold" />
