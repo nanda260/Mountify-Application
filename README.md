@@ -26,4 +26,3 @@ Link Application : https://unesa.me/MountifyApplication
 Link Address Education of Technology Information : https://pendidikan-ti.ft.unesa.ac.id/
 
 Reference of Project Application :  https://github.com/AzharRivaldi/Info-Pendakian-Gunung
->>>>>>> 010e93b95af89983b4f5ec53d2c0177de489fe85
